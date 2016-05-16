@@ -77,6 +77,6 @@ log.WithField("existing#", containerExist).Info()
 log.WithField("=>", servName).Info("Checking number of containers for")
 ```
 
-## Recommended style for logging
+## Recommended Style
 
 See the [CONTRIBUTING](https://github.com/eris-ltd/eris-cli/blob/master/.github/CONTRIBUTING.md#errors-and-log-messages-style) document.
