@@ -1,6 +1,6 @@
 # Eris Logger
 
-Eris logging package is a fork of the [logrus](https://github.com/Sirupsen/logrus) package with the custom `ErisFormatter` formatting set by default.
+Eris logging package is a fork of the [logrus](https://github.com/Sirupsen/logrus) logger with the `ErisFormatter` set by default.
 
 It also avoids logrus' shortcoming of not able to ignore logging levels set by the package's `SetLevel()` function.
 
