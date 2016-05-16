@@ -18,7 +18,7 @@ if do.Verbose {
 
 ```
 
-## Initialization for tests
+## Initialization for Tests
 
 ```
 import log "github.com/eris-ltd/eris-logger"
