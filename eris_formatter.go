@@ -2,12 +2,9 @@ package logger
 
 import (
 	"fmt"
-	"os"
 	"os/exec"
 	"runtime"
 	"sort"
-
-	"github.com/docker/docker/pkg/term"
 )
 
 // ErisFormatter is a custom logger implementation.
@@ -92,7 +89,7 @@ func (f ErisFormatter) Highlight(tag, comment string) (adjustedOffset int, text 
 	commentDecorated := comment
 
 	// Use color formatting if specified and if connected to the terminal.
-	if f.Color && term.IsTerminal(os.Stdout.Fd()) && term.IsTerminal(os.Stderr.Fd()) {
+	if f.Color && IsTerminal() {
 		tagDecorated = fmt.Sprintf("%s%s%s", escTag, tag, escReset)
 		commentDecorated = fmt.Sprintf("%s%s%s", escBold, comment, escReset)
 	}
