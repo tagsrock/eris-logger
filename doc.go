@@ -1,5 +1,5 @@
 /*
-Package logger is a logrus fork for Eris Industries, Ltd.
+Package logger is a logrus fork for Monax Industries, Ltd.
 
   package main
 
